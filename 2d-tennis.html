@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2d tennis or whatever it's called</title>
+    <style>
+        body {
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+
+        .tip {
+          height: 20%;
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: rgb(22, 157, 235);
+          position: absolute;
+          top: 45%;
+          left: 25%;
+          font-size: 400%;
+        }
+
+        .player1 {
+          height: 10%;
+          width: 25%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: rgb(22, 157, 235);
+          position: absolute;
+          top: 7%;
+          left: 10%;
+          font-size: 300%;
+        }
+
+        .player2 {
+          height: 10%;
+          width: 25%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: rgb(22, 157, 235);
+          position: absolute;
+          top: 7%;
+          left: 65%;
+          font-size: 300%;
+        }
+
+        .player1score {
+          font-size: 150%;
+          color: white;
+          position: absolute;
+          top: -5%;
+          left: 135%;
+        }
+
+        .player2score {
+          font-size: 150%;
+          color: white;
+          position: absolute;
+          top: -5%;
+          left: -40%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="player1">Player1 <span class="player1score">0</span> </div>
+    <div class="player2"> <span class="player2score">0</span> Player2</div>
+    <div class="tip">Press space to start</div>
+    <canvas></canvas>
+  </body>
+  <script src="2d-tennis.js"></script>
+</html>
